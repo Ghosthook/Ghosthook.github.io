@@ -1,5 +1,5 @@
 # Ghosthook
-full url()
+full url(https://ghosthook.github.io/)
 
 
 Best Private-cheat evaaa

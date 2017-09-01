@@ -1,0 +1,166 @@
+#green {
+    width: 271px;
+    height: 200px;
+    border: 1px solid green;
+    margin: 0 auto;
+    clear: both;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0; left: 233px; top: 81px; 
+
+}
+
+
+#banner{
+  position:fixed;
+  margin:0;
+  width:300px;
+  height:250px;
+  border: 1px solid red;
+  overflow: hidden;
+}
+
+
+
+
+#blue {
+    width: 310px;
+    height: 100px;
+    border: 1px solid blue;
+    border-style: dotted;
+    margin: 0 auto;
+    clear: both;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background-image: url("http://web.archive.org/web/20161111165515if_/https://ilikecheats.net/wp-content/uploads/2012/10/csgo-cheat.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    bottom: 0;
+   }
+
+
+   #blue2 {
+       width: 310px;
+       height: 100px;
+       border: 1px solid blue;
+       border-style: dotted;
+       clear: both;
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       justify-content: center;
+       align-items: center;	
+       border-bottom-right-radius: 30px; 
+       border-bottom-left-radius: 30px;
+       border-top-left-radius: 30px;
+       border-top-right-radius: 30px;
+       background-image: url("http://esportsbetting.ninja/wp-content/uploads/2016/12/cheat1.jpg");
+       background-repeat: no-repeat;
+       background-size: cover;
+       position: fixed;
+       bottom: 0;
+       right: 0px;
+   }
+
+
+
+   #blue3 {
+   	   width: 310px;
+   	   height: 100px;
+   	   border: 2px solid blue;
+   	   border-style: double;
+   	   clear: both;
+   	   display: flex;
+   	   flex-direction: row;
+   	   flex-wrap: wrap;
+   	   justify-content: center;
+   	   align-items: center;
+   	   border-bottom-right-radius: 30px; 
+   	   border-bottom-left-radius: 30px;
+   	   border-top-right-radius: 30px; 
+   	   border-top-left-radius: 30px;
+       background-image: url("http://i.imgur.com/dVkKFXm.png");
+       background-repeat: no-repeat;
+       background-size: cover;
+       position: fixed;
+       bottom: 0;
+       left: 520px;
+   }
+
+
+   #welcomevid {
+     position: absolute;
+     top: 45%;
+     left: 50%;
+     -webkit-transform: translate(-50%, -50%);
+     -moz-transform: translate(-50%, -50%);
+     -o-transform: translate(-50%, -50%);
+     -ms-transform: translate(-50%, -50%);
+     transform: translate(-50%, -50%);
+   }
+
+
+   
+     .content-section {
+                width: 50%;
+                margin: 0 auto;
+                padding: 15% 0;
+            }
+            .content-section h1 {
+                text-transform: uppercase;
+                margin-bottom: 15px;
+            }
+            .content-section p {
+                font-size: 1.2em;
+                color: #333;
+            }
+            
+            .video-section {
+                position: relative;
+                width: 1000;
+                height: 500;
+                overflow: hidden;
+            }
+            #video-elem {
+                width: 1000;
+            }
+            video::-webkit-media-controls {
+                display:none !important;
+            }
+            .video-overlay {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background-color: rgba(255, 255, 255, 0.8);
+                opacity: 0;
+                transition: opacity 0.3s ease;
+            }
+            .video-overlay:hover {
+                opacity: 1;
+            }
+            .video-overlay h1 {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                text-transform: uppercase;
+                font-size: 3em;
+                color: #000;
+                text-align: center;
+            }
+
+

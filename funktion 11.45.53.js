@@ -9,8 +9,7 @@
   };
   firebase.initializeApp(config);
 
-  
-  var app = angular.module("app", ["firebase"]);
+   var app = angular.module("app", ["firebase"]);
 
   app.factory("kommentarer", function($firebaseArray) {
       var ref = firebase.database().ref().child("kommentarer").child(kommentarsfalt);
@@ -51,59 +50,3 @@ app.factory("Auth", ["$firebaseAuth",
         return $firebaseAuth();
     }
 ]);
-
-// and use it in our controller
-app.controller("UserCtrl", ["$scope", "Auth",
-    function($scope, Auth) {
-        $scope.auth = Auth;
-        $scope.signInUser = function() {
-            $scope.message = null;
-            $scope.error = null;
-
-            // Create a new user
-            Auth.$signInWithEmailAndPassword($scope.loginEmail, $scope.loginPassword)
-                .then(function(firebaseUser) {
-                    $scope.message = "User signed in with uid: " + firebaseUser.uid;
-                }).catch(function(error) {
-                    $scope.error = error;
-                });
-        };
-
-        $scope.createUser = function() {
-             $scope.message = null;
-             $scope.error = null;
-
-             // Create a new user
-             Auth.$createUserWithEmailAndPassword($scope.registerEmail, $scope.registerPassword)
-               .then(function(firebaseUser) {
-                 $scope.message = "User created with uid: " + firebaseUser.uid;
-               }).catch(function(error) {
-                 $scope.error = error;
-               });
-           };
-        
-        $scope.auth.$onAuthStateChanged(function(firebaseUser) {
-            $scope.firebaseUser = firebaseUser;
-            console.log(firebaseUser);
-        });
-    }
-]);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
